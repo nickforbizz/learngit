@@ -4,7 +4,7 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
     $name = htmlspecialchars($_POST['name']);
     $email = htmlspecialchars($_POST['email']);
-    $kra_pin = htmlspecialchars($_POST['kra_pin']);
+    $kra_pin = htmlspecialchars($_POST['kra_pin']); 
 
     // Save data to a file
     $data = "Name: $name, Email: $email, KRA PIN: $kra_pin" . PHP_EOL;
